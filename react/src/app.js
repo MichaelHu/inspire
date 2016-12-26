@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Hello from './components/Hello';
+import ArticleList from './components/ArticleList';
 
 ReactDOM.render(
-    <Hello name="hudamin" />
+    <ArticleList />
     , document.getElementById( 'wrapper' )
 );
