@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Hello from './components/Hello';
-import ArticleList from './components/ArticleList';
+import IndexPage from './pages/Index';
 
 ReactDOM.render(
-    <ArticleList />
+    <IndexPage />
     , document.getElementById( 'wrapper' )
 );

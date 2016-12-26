@@ -1,23 +1,20 @@
 import React, { Component } from 'react';
 
-var ArticleList = React.createClass( {
+class ArticleList extends Component {
 
-    getInitialState: function() {
-        return { items: [] };
-    }
-
-    , render: function() {
+    render() {
+        console.log( this.props );
         return (
             <ul>
             {
-                this.state.items.map( function( item) {
-                    return <li>{item.title}</li>;
+                this.props.items.map( function( item ) {
+                    return <li key={item._id}>{item.title}</li>;
                 } )
             }
             </ul>
         );
     } 
 
-} );
+}
 
 module.exports = ArticleList;
