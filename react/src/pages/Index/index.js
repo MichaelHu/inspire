@@ -25,7 +25,7 @@ var IndexPage = React.createClass( {
     , componentDidMount: function() {
         console.log( 'componentDidMount' );
         $.ajax( 
-            '/notes/1/10' 
+            '/notes/1/100' 
             , {
                 success: ( data, textStatus, jqXHR ) => {
                     this.setState( { articles: eval( data ) } );

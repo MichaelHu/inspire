@@ -19,6 +19,10 @@ module.exports = {
                 test: /\.jsx?$/
                 , loader: 'babel?presets[]=es2015,presets[]=react'
             }
+            , {
+                test: /\.s?css$/
+                , loader: 'style!css?modules&localIdentName=[hash:base64:7]&camelCase!sass'
+            }
         ]
     }
     , plugins: [
@@ -31,6 +35,7 @@ module.exports = {
         contentBase: buildDir
         , host: '0.0.0.0'
         , port: 9100
+        , historyApiFallback: true
         , proxy: {
             '/notes': {
                 target: 'http://127.0.0.1:8700'
