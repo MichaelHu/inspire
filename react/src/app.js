@@ -8,7 +8,7 @@ render(
     <Router history={browserHistory}>
         <Route path="/">
             <IndexRoute component={IndexPage} />
-            <Route path="article" component={ArticlePage} />
+            <Route path="article/:article_id" component={ArticlePage} />
         </Route>
     </Router>
     , document.getElementById( 'wrapper' )

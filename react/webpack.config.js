@@ -41,6 +41,10 @@ module.exports = {
                 target: 'http://127.0.0.1:8700'
                 // , pathRewrite: { '^/notes': '/abc/def' } 
             }
+            , '/note': {
+                target: 'http://127.0.0.1:8700'
+                // , pathRewrite: { '^/notes': '/abc/def' } 
+            }
         }
     }
 };
